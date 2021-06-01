@@ -4,10 +4,15 @@ const Popup = ({ trigger, setTrigger, children }) => {
   return trigger ? (
     <div className="popup">
       <div className="popup-inner">
-        <button className="close-btn" onClick={() => setTrigger(false)}>
-          close
-        </button>
         {children}
+        <div className="btn-contain">
+          <button className="close-btn" onClick={() => setTrigger(false)}>
+            Accepter
+          </button>
+          <button className="close-btn" onClick={() => setTrigger(false)}>
+            Continuer sur le site sans accepter
+          </button>
+        </div>
       </div>
     </div>
   ) : (

@@ -33,9 +33,15 @@ main {
   max-width: 640px;
   background-color: white;
 }
-
+.btn-contain {
+  display: flex;
+  flex-direction: row;
+}
 .popup-inner .close-btn {
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.text-popup {
+  margin-top: 1rem;
 }
